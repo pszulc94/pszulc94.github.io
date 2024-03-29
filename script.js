@@ -11,7 +11,7 @@ document.getElementById('password-input').addEventListener('keypress', handleKey
 function checkPassword() {
     var password = document.getElementById('password-input').value;
     // Sprawdź hasło, możesz dodać tutaj odpowiednią logikę weryfikacji
-    if (password === 'agata') {
+    if (password === '123agata') {
         // Jeśli hasło jest poprawne, pokaż główną zawartość strony i ukryj ekran logowania
         document.getElementById('main-container').style.display = 'block';
         document.querySelector('.login-container').style.display = 'none';
