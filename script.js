@@ -1,3 +1,13 @@
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        checkPassword();
+    }
+}
+
+// Dodajemy nasłuchiwanie zdarzenia naciśnięcia klawisza Enter na polu hasła
+document.getElementById('password-input').addEventListener('keypress', handleKeyPress);
+
+
 function checkPassword() {
     var password = document.getElementById('password-input').value;
     // Sprawdź hasło, możesz dodać tutaj odpowiednią logikę weryfikacji
@@ -9,6 +19,7 @@ function checkPassword() {
         alert('Nieprawidłowe hasło! Spróbuj ponownie.');
     }
 }
+
 
 
 document.addEventListener('mousemove', function(e) {
