@@ -4,6 +4,8 @@ body {
     overflow: hidden; /* Blokowanie przewijania strony */
 }
 
+
+
 .login-container {
     display: flex;
     align-items: center;
@@ -562,3 +564,5 @@ body {
     font-size: 20px; /* Rozmiar czcionki */
     letter-spacing: 3px;
 }
+
+@font-face { font-family: Bebas Neue; src: url('BebasNeue-Regular.ttf'); 
