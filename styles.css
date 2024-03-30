@@ -1,7 +1,9 @@
 body {
     font-family: Bebas Neue, sans-serif;
     margin: 0;
+    padding: 0;
     overflow: hidden; /* Blokowanie przewijania strony */
+  
 }
 
 
@@ -11,9 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('images/bg.jpg');
-    background-size: cover;
-    background-position: center;
+   
 }
 
 .login-box {
@@ -61,9 +61,7 @@ body {
 .container {
     display: none; /* Ukrycie zawartości do czasu zalogowania */
     height: 100vh;
-    background-image: url('images/bg.jpg'); /* Dodaj tło */
-    background-size: cover;
-    background-position: center;
+   
     transition: background-position 0.5s ease;
     position: relative; /* Ustawienie pozycji na relative */
 }
@@ -538,18 +536,7 @@ body {
     position: relative; /* Ustawienie pozycji na relative */
 }
 
-/* Definiujemy animację */
-@keyframes backgroundMove {
-    0% {
-        background-position: top left; /* Początkowa pozycja tła */
-    }
-    50% {
-        background-position: bottom right; /* Połowa czasu - końcowa pozycja tła */
-    }
-    100% {
-        background-position: top left; /* Koniec animacji - powrót do początkowej pozycji tła */
-    }
-}
+
 .container, .login-container {
     /* Pozostałe style dla kontenera */
     position: relative; /* Ustawienie pozycji na relative */

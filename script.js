@@ -21,14 +21,6 @@ function checkPassword() {
 }
 
 
-
-document.addEventListener('mousemove', function(e) {
-    const container = document.querySelector('.container');
-    const xOffset = (window.innerWidth / 2 - e.pageX) / 25;
-    const yOffset = (window.innerHeight / 2 - e.pageY) / 25;
-    container.style.backgroundPosition = `${50 + xOffset}% ${50 + yOffset}%`;
-});
-
 document.querySelectorAll('.button').forEach(button => {
     button.addEventListener('mouseenter', function() {
         this.style.transform = 'scale(1.1)'; // Powiększenie przycisku po najechaniu myszką
