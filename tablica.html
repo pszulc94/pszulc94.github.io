@@ -72,28 +72,28 @@
   const firebaseConfig = {
     apiKey: "AIzaSyBIQ2HBVgVAinetxW-2bbkZOQmeasqyyjk",
     authDomain: "foto-tablica.firebaseapp.com",
-    databaseURL: "https://foto-tablica-default-rtdb.europe-west1.firebasedatabase.app/",
+    databaseURL: "https://foto-tablica-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "foto-tablica",
     storageBucket: "foto-tablica.appspot.com",
     messagingSenderId: "102109943597",
     appId: "1:102109943597:web:2749a70fe79944440e25a4"
   };
-  firebase.initializeApp(firebaseConfig);
 
-  // Reference to the Firebase Realtime Database
-  const database = firebase.database();
+  // Inicjalizacja Firebase
+  const app = firebase.initializeApp(firebaseConfig);
 
-  // Reference to the todo list in the database
+  // Odwołanie do bazy danych w czasie rzeczywistym Firebase
+  const database = app.database();
   const todoRef = database.ref('todo');
 
-  // Handle form submission to add new todo item
+  // Obsługa wysyłania formularza do dodania nowego elementu listy todo
   const todoForm = document.getElementById('todo-form');
   const todoText = document.getElementById('todo-text');
   const todoAutor = document.getElementById('todo-autor');
   const todoData = document.getElementById('todo-data');
   const todoList = document.getElementById('todo-list');
 
-  document.getElementById('todo-submit').addEventListener('click', () => { // Obsługa zdarzenia kliknięcia
+  document.getElementById('todo-submit').addEventListener('click', () => {
     const text = todoText.value.trim();
     const autor = todoAutor.value.trim();
     const data = new Date().toISOString();
@@ -107,7 +107,7 @@
     }
   });
 
-  // Listen for changes in the todo list
+  // Nasłuchiwanie zmian w liście todo
   todoRef.on('value', (snapshot) => {
     todoList.innerHTML = '';
     snapshot.forEach((childSnapshot) => {
