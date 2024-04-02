@@ -49,8 +49,8 @@
 <div id="bg"></div>
 <script src="three.min.js"></script>
 <script src="vanta.waves.min.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.6.8/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.10.0/firebase-database.js"></script>
 <script>
   VANTA.WAVES({
     el: '#bg',
@@ -79,14 +79,14 @@
     appId: "1:102109943597:web:2749a70fe79944440e25a4"
   };
 
-  // Inicjalizacja Firebase
+  // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig);
 
-  // Odwołanie do bazy danych w czasie rzeczywistym Firebase
+  // Reference to the Firebase Realtime Database
   const database = app.database();
   const todoRef = database.ref('todo');
 
-  // Obsługa wysyłania formularza do dodania nowego elementu listy todo
+  // Handle form submission to add new todo item
   const todoForm = document.getElementById('todo-form');
   const todoText = document.getElementById('todo-text');
   const todoAutor = document.getElementById('todo-autor');
@@ -107,7 +107,7 @@
     }
   });
 
-  // Nasłuchiwanie zmian w liście todo
+  // Listen for changes in the todo list
   todoRef.on('value', (snapshot) => {
     todoList.innerHTML = '';
     snapshot.forEach((childSnapshot) => {
