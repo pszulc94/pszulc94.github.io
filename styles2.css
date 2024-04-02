@@ -1,0 +1,96 @@
+body {
+    font-family: Bebas Neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Blokowanie przewijania strony */
+}
+
+.logo-container {
+    display: flex; /* Używamy flexbox */
+    flex-direction: column; /* Wyśrodkowanie zawartości w pionie */
+    align-items: center; /* Wyśrodkowanie zawartości w poziomie */
+}
+
+.logo img {
+    margin-top: 10px;
+    max-width: 200px;
+    height: auto;
+    position: absolute; /* Ustawienie pozycji na absolutne, aby podpis był umieszczony w prawym dolnym rogu kontenera */
+    bottom: 10px; /* Odległość od dolnej krawędzi */
+    left: 10px; /* Odległość od prawej krawędzi */
+}
+
+.container2 {
+    position: absolute; /* Ustawienie pozycji na absolutne, aby podpis był umieszczony w prawym dolnym rogu kontenera */
+    bottom: 10px; /* Odległość od dolnej krawędzi */
+    right: 10px; /* Odległość od prawej krawędzi */
+    color: #ffffff; /* Kolor tekstu */
+    font-size: 20px; /* Rozmiar czcionki */
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+#todo-form {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Wyśrodkowanie zawartości w pionie */
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(105, 99, 99, 0.3); /* Dodanie przezroczystości */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#todo-text,
+#todo-autor,
+#todo-submit {
+    width: 100%; /* Rozciągnięcie elementów na pełną szerokość kontenera */
+    margin-bottom: 10px; /* Dodanie odstępu między elementami */
+    padding: 10px;
+    box-sizing: border-box; /* Uwzględnienie paddingu w obliczeniach szerokości */
+}
+
+#todo-text {
+    height: 150px; /* Ustawienie wysokości pola tekstowego */
+    resize: vertical; /* Dopuszczenie zmiany rozmiaru pionowego pola tekstowego */
+    text-align: left; /* Tekst w polu tekstowym będzie zaczynał się od lewej górnej części */
+}
+
+#todo-submit {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#todo-submit:hover {
+    background-color: #0056b3;
+}
+
+#todo-submit:focus {
+    background-color: #0056b3;
+    outline: none;
+}
+
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@font-face { font-family: Bebas Neue; src: url('BebasNeue-Regular.ttf'); 
+}
