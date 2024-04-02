@@ -31,37 +31,41 @@ body {
 }
 
 #todo-form {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: stretch; /* Wyśrodkowanie zawartości w pionie */
+    width: 250px;
+    padding: 20px;
+    background-color: rgba(105, 99, 99, 0.3); /* Dodanie przezroczystości */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#todo-form input[type="text"] {
-    margin: 5px 0;
+#todo-text,
+#todo-autor,
+#todo-submit {
+    width: 100%; /* Rozciągnięcie elementów na pełną szerokość kontenera */
+    margin-bottom: 10px; /* Dodanie odstępu między elementami */
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
+    box-sizing: border-box; /* Uwzględnienie paddingu w obliczeniach szerokości */
 }
 
-#todo-autor {
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+#todo-text {
+    height: 150px; /* Ustawienie wysokości pola tekstowego */
+    resize: vertical; /* Dopuszczenie zmiany rozmiaru pionowego pola tekstowego */
+    text-align: left; /* Tekst w polu tekstowym będzie zaczynał się od lewej górnej części */
 }
 
 #todo-submit {
-    margin: 5px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
     background-color: #007bff;
     color: #fff;
+    border: none;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -73,6 +77,7 @@ body {
     background-color: #0056b3;
     outline: none;
 }
+
 
 #todo-list {
     list-style-type: none;
@@ -86,5 +91,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
+
 @font-face { font-family: Bebas Neue; src: url('BebasNeue-Regular.ttf'); 
 }
