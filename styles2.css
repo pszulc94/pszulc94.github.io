@@ -1,0 +1,88 @@
+body {
+    font-family: Bebas Neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Blokowanie przewijania strony */
+}
+
+.logo-container {
+    display: flex; /* Używamy flexbox */
+    flex-direction: column; /* Wyśrodkowanie zawartości w pionie */
+    align-items: center; /* Wyśrodkowanie zawartości w poziomie */
+}
+
+.logo img {
+    margin-top: 10px;
+    max-width: 200px;
+    height: auto;
+    position: absolute; /* Ustawienie pozycji na absolutne, aby podpis był umieszczony w prawym dolnym rogu kontenera */
+    bottom: 10px; /* Odległość od dolnej krawędzi */
+    left: 10px; /* Odległość od prawej krawędzi */
+}
+
+.container2 {
+    position: absolute; /* Ustawienie pozycji na absolutne, aby podpis był umieszczony w prawym dolnym rogu kontenera */
+    bottom: 10px; /* Odległość od dolnej krawędzi */
+    right: 10px; /* Odległość od prawej krawędzi */
+    color: #ffffff; /* Kolor tekstu */
+    font-size: 20px; /* Rozmiar czcionki */
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+#todo-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#todo-form input[type="text"] {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#todo-autor {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#todo-submit {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+#todo-submit:hover {
+    background-color: #0056b3;
+}
+
+#todo-submit:focus {
+    background-color: #0056b3;
+    outline: none;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#todo-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}

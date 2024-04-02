@@ -60,8 +60,8 @@ function getButtonLink(buttonText) {
             return 'https://docs.google.com/spreadsheets/d/19h5ojNKSVeABc9zGy-L2OouFrckCZLocW-7mcVSKPEA/edit#gid=0';
         case 'ZLECENIA PACKSHOT':
             return 'https://docs.google.com/spreadsheets/d/1l1N6YvVWXrcgH7tyMBZYKdmPXs3orA7ToyIq9mxUl6g/edit#gid=1453186253&fvid=547670437';
-        case 'TABELA PRODUKTÓW':
-            return 'https://docs.google.com/spreadsheets/d/19I-ayAT2FlJ1oIC8M1ZxJo--CmeqgOATW3uftHG0s4E/edit#gid=32145454';
+        case 'TABLICA':
+            return 'tablica.html';
         case 'NADGODZINY':
             return 'https://docs.google.com/spreadsheets/d/1yyKrLXpjxN_AVED_aJ8-U3X6ubxKeGhq62CeoHJZUDA/edit?hl=pl#gid=0';
         case 'URLOPY':
