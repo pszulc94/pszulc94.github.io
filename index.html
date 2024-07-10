@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Fotograficzne</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        #bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+<div id="bg"></div>
+    <div class="login-container">
+        <div class="login-box">
+            <h1></h1>
+            <input type="password" id="password-input" placeholder="Hasło">
+            <button onclick="checkPassword()">Zaloguj</button>
+        </div>
+    </div>
+    <div class="container" id="main-container" style="display: none;">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
+            </div>
+            <div class="studio-name">
+                Studio Fotograficzne
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="row">
+    <a href="" class="button planer-button" target="_blank">PLANER</a>
+    <a href="" class="button zlec-button" target="_blank">RAPORT ARANŻACJI</a>
+    <a href="" class="button zlec-button" target="_blank">RAPORT PACKSHOTÓW</a>
+    <a href="" class="button zlec-button" target="_blank">KARTA SŁUŻBOWA</a>
+    
+</div>
+
+<div class="row">
+    <a href="" class="button xprimer-button" target="_blank">NADGODZINY</a>
+    <a href="" class="button xprimer-button" target="_blank">URLOPY</a>
+    <a href="" class="button xprimer-button" target="_blank">XPRIMER</a>
+    
+    
+</div>
+
+<div class="row">
+   <a href="" class="button inne-button" target="_blank">PIM BUTIK</a>
+    <a href="" class="button inne-button" target="_blank">PIM MEBLE</a>
+</div>
+
+         </div>
+    </div>
+
+    <script src="script.js"></script>
+<script src="three.min.js"></script>
+<script src="vanta.waves.min.js"></script>
+<script type="text/javascript">
+  VANTA.WAVES({
+  el: '#bg',
+ mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xf0f0f,
+  shininess: 12.00,
+  waveHeight: 18.50,
+  waveSpeed: 0.75,
+  zoom: 0.65
+})
+</script>
+
+</body>
+</html>
