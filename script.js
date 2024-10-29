@@ -58,7 +58,7 @@ function getButtonLink(buttonText) {
             return 'https://docs.google.com/spreadsheets/d/1s1KP8e-qDaHLdxG81cEu6TiY_A-8hQBwKiFfPvI37oY/edit?hl=pl&gid=0#gid=0';
         case 'RAPORT PACKSHOTÓW':
             return 'https://docs.google.com/spreadsheets/d/1fEtLEakkaMaB4O2utpILCJ0nmaRwPTBJJCyEyfmB-WM/edit?usp=sharing';
-        case 'KARTA SŁUŻBOWA':
+        case 'KARTA':
             return 'https://docs.google.com/spreadsheets/d/16OqXUjWm1NA97LAF8uejz73pcUos4zGaHnqN5N8a6us/edit?gid=94541556#gid=94541556';
         case 'PIM BUTIK':
             return 'https://docs.google.com/spreadsheets/d/19I-ayAT2FlJ1oIC8M1ZxJo--CmeqgOATW3uftHG0s4E/edit?gid=32145454#gid=32145454&fvid=1609005562';
@@ -70,6 +70,12 @@ function getButtonLink(buttonText) {
             return 'https://docs.google.com/spreadsheets/d/1sAIulfQ5m3LyQq1BiNuVoHr4KhuWtYSf1EYh0Aju72M/edit?hl=pl#gid=0';
         case 'XPRIMER':
             return 'https://xprimer.kpmagata.com/xprimer/auth/login?targetUri=%2Fstart';
+            case 'FORMATY':
+            return 'https://docs.google.com/spreadsheets/d/1cq9WJcfJyscBrxvbKPUpa_Jr_lt8ZNq26oEQjVH3Jew/edit?gid=0#gid=0';
+            case 'INTRANET':
+            return 'http://intranet.kpmagata.com/default.aspx';
+            case 'PACKSHOTY':
+            return 'https://docs.google.com/spreadsheets/d/1It0e1CxHL6t0xYrmzcxiMv76PCk3fK-dL9anOUPRYB8/edit?gid=968408167#gid=968408167';
         default:
             return '#'; // Domyślnie brak linku
     }

@@ -73,16 +73,16 @@ body {
 }
 
 .logo img {
-    margin-top: 10px;
-    max-width: 250px;
+    margin-top: 15px;
+    max-width: 300px;
     height: auto;
 }
 
 .studio-name {
     color: #fff; /* Kolor tekstu */
-    font-size: 35px; /* Rozmiar czcionki */
+    font-size: 42px; /* Rozmiar czcionki */
     margin-top: 1px; /* Odsunięcie od logo */
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
     width: 400px; /* Szerokość napisu */
     user-select: none;
@@ -217,7 +217,7 @@ body {
 .planer-button,
 .planer-button:after {
   width: 150px;
-  height: 70px;
+  height: 150px;
   line-height: 78px;
   font-size: 30px;
   font-family: 'Bebas Neue', sans-serif;
@@ -317,8 +317,8 @@ body {
 .zlec-button,
 .zlec-button:after {
   width: 150px;
-  height: 70px;
-  line-height: 1;
+  height: 150px;
+  line-height: 78px;
   font-size: 30px;
   font-family: 'Bebas Neue', sans-serif;
   background: linear-gradient(45deg, transparent 5%, #228B22 5%);
@@ -417,7 +417,7 @@ body {
 .inne-button,
 .inne-button:after {
   width: 150px;
-  height: 70px;
+  height: 150px;
   line-height: 78px;
   font-size: 30px;
   font-family: 'Bebas Neue', sans-serif;
@@ -517,7 +517,7 @@ body {
 .tablica-button,
 .tablica-button:after {
   width: 150px;
-  height: 70px;
+  height: 150px;
   line-height: 78px;
   font-size: 30px;
   font-family: 'Bebas Neue', sans-serif;
@@ -647,7 +647,7 @@ body {
     bottom: 10px; /* Odległość od dolnej krawędzi */
     right: 10px; /* Odległość od prawej krawędzi */
     color: #ffffff; /* Kolor tekstu */
-    font-size: 20px; /* Rozmiar czcionki */
+    font-size: 25px; /* Rozmiar czcionki */
     letter-spacing: 3px;
 }
 
